@@ -1,11 +1,13 @@
 ---
-title: "Proposal title"
-subtitle: "Proposal"
+title: "Music Recommendation System Based on User Listening History"
+subtitle: "Developing a Music Recommendation System Using Spotify Song Data"
 author: 
-  - name: "Team Name - Team member 1, Team member 2,..."
+  - name: "Srikanth (Solo) - Srikanth Oruganti"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Project description"
+      - description: "It is not an easy task as there are millions of songs on music streaming services such as Spotify and it is possible to recommend the user songs that they might appreciate. The presented project will be devoted to the creation of a recommendation system on the basis of the data of about 1921-2020 Spotify lists. It has more than 160,000 songs, and the data includes the title of the song as well as the artist or the year of release, tempo, danceability, energy, and popularity. The system will utilize a variety of techniques: Collaborative Filtering: Based on user-item interactions (such as previous song plays, ratings, or likes).
+                Content-Based Filtering: Recommending songs with similar attributes (e.g., genre, tempo, danceability).
+                Hybrid Models: Combining both collaborative and content-based methods for more accurate recommendations."
 format:
   html:
     code-tools: true
@@ -20,19 +22,33 @@ jupyter: python3
 ---
 
 ```{python}
-#| label: load-pkgs
-#| message: false
+
 import numpy as np
+import pandas as pd
 ```
 
 ## Dataset
 
+-   **Source:** Kaggle -https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted?select=data.csv
+
 ```{python}
-#| label: load-dataset
+
+
+# Load the dataset
+url = "https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted?select=data.csv"
+data = pd.read_csv(url)
+
+# Display the first few rows of the dataset
+data.head()
 #| message: false
+#| 
 ```
 
 A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.
+1. The dataset offers a diverse mix of numerical audio‐features (continuous) and categorical/metadata features, allowing you to apply a wide range of techniques
+2. Adequate size for scalable analytics with 160 K rows
+
+
 
 Make sure to load the data and use inline code for some of this information.
 
