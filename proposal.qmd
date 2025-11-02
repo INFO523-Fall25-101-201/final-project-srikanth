@@ -53,9 +53,26 @@ A brief description of your dataset including its provenance, dimensions, etc. a
 Make sure to load the data and use inline code for some of this information.
 
 ## Questions
+What key audio and metadata features (such as danceability, energy, tempo, or valence) most strongly influence a song’s popularity on Spotify?
+This question focuses on identifying predictive attributes that determine song success, enabling classification or regression modeling to forecast popularity.
 
-The two questions you want to answer.
+How have the musical characteristics of popular songs evolved across different decades (1920s–2020s)?
+This question explores temporal trends to reveal how listener preferences and musical production styles have changed over time using clustering and trend analysis.
 
 ## Analysis plan
 
--   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+- Data Cleaning: Handle missing values, duplicates, and inconsistencies to ensure data quality.
+
+Feature Engineering: Derive key audio features (tempo, danceability, energy, popularity) and encode categorical variables (artist, genre, style).
+
+Collaborative Filtering: Apply SVD or KNN to predict user preferences based on similar listener profiles.
+
+Content-Based Filtering: Recommend songs with similar musical characteristics to those a user already enjoys.
+
+Hybrid Model: Combine collaborative and content-based methods using Matrix Factorization or Neural Network approaches.
+
+Evaluation (Precision/Recall/F1): Measure accuracy and relevance of recommendations.
+
+Evaluation (MSE): Assess numerical prediction error in rating or popularity estimation.
+
+Evaluation (Top-N Accuracy): Evaluate how often recommended tracks appear in the user’s top selections.
