@@ -5,9 +5,11 @@ author:
   - name: "Srikanth (Solo) - Srikanth Oruganti"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-        description: description: "It is not an easy task as there are millions of songs on music streaming services such as Spotify and it is possible to recommend the user songs that they might appreciate. The presented project will be devoted to the creation of a recommendation system on the basis of the data of about 1921-2020 Spotify lists. It has more than 160,000 songs, and the data includes the title of the song as well as the artist or the year of release, tempo, danceability, energy, and popularity. The system will utilize a variety of techniques: Collaborative Filtering: Based on user-item interactions (such as previous song plays, ratings, or likes).
-                Content-Based Filtering: Recommending songs with similar attributes (e.g., genre, tempo, danceability).
-                Hybrid Models: Combining both collaborative and content-based methods for more accurate recommendations."
+        description: |
+          It is not an easy task as there are millions of songs on music streaming services such as Spotify and it is possible to recommend the user songs that they might appreciate. The presented project will be devoted to the creation of a recommendation system on the basis of the data of about 1921-2020 Spotify lists. It has more than 160,000 songs, and the data includes the title of the song as well as the artist or the year of release, tempo, danceability, energy, and popularity. The system will utilize a variety of techniques:
+          - Collaborative Filtering: Based on user-item interactions (such as previous song plays, ratings, or likes).
+          - Content-Based Filtering: Recommending songs with similar attributes (e.g., genre, tempo, danceability).
+          - Hybrid Models: Combining both collaborative and content-based methods for more accurate recommendations.
 format:
    html:
     code-tools: true
