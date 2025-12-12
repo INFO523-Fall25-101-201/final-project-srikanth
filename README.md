@@ -35,5 +35,31 @@ Release year – provides temporal context for musical trends.
 
 These attributes allow songs to be quantitatively compared and analyzed for similarity.
 
+
+Models Implemented:
+1️. Content-Based Recommender
+KNN + Cosine similarity
+Uses 9 audio features
+Finds songs closest to user-selected track
+Returns similarity score + popularity
+2️.  Artist-Filtered Recommender
+Prioritises tracks from the same artist
+Highly useful for fans of specific musicians
+3️. Cluster-Based Recommender
+Recommends songs from the same K-Means cluster
+Mimics “genre-based” suggestions
+4️.  Weighted Feature Recommender
+Assigns higher weights to energy, danceability, valence
+Produces improved musical similarity
+# Outcome:
+A complete, multi-method music recommendation system based on user listening history, audio similarity, and clustering — fulfilling the project objective.
+
+
+# Recommendation Techniques
+•	Collaborative Filtering: Using matrix factorization techniques such as SVD (Singular Value Decomposition) or K-Nearest Neighbors (KNN) predict user preferences when their profile is similar to other users.
+•	Content-Based Filtering: Recommend the similarities of the songs that the user has been listening to; based on the musical aspects (tempo, danceability, loudness etc.).
+•	Hybrid Model: Unite the best attributes of content-based and collaborative filtering with the aid of such algorithms as Matrix Factorization or Neural Network-based combinations.
+
+
 #### Disclosure:
 Derived from the original data viz course by Mine Çetinkaya-Rundel @ Duke University
