@@ -1,11 +1,11 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21418979)
-# project-final
+## Music Recommendation System Using Spotify Dataset (1921–2020)
 
 Final project repo for INFO 523 - Summer 2025.
 
 Site URL: https://github.com/INFO523-Fall25-101-201/final-project-srikanth
 
-Music Recommendation System Using Spotify Dataset (1921–2020)
+
 
 Develop a content-based music recommendation system using audio features and similarity modelling to suggest songs based on user listening history.
 Dataset: Spotify Tracks Dataset (169,907 songs) 
