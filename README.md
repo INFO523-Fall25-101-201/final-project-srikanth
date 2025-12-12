@@ -12,6 +12,13 @@ Dataset: Spotify Tracks Dataset (169,907 songs)
 
 The dataset used in this project is derived from Spotify’s music metadata and audio features. It includes thousands of tracks released over nearly a century, providing a rich historical and musical context. Each record represents a song and contains both descriptive and numerical attributes.
 
+
+## Notebooks are where all work was completed
+Music_Recom_System_Using_Spotify_Dataset.ipynb
+In this project, we analyzed a Spotify music dataset (1921–2020) to build a basic music recommendation system. We performed data cleaning and preprocessing, explored key audio features such as tempo, energy, danceability, and popularity, and used these features to understand patterns in music listening behavior. Based on the similarity of songs and their characteristics, we developed a recommendation approach that suggests songs similar to a given track. This project demonstrates how data analysis and feature-based similarity techniques can be applied to create a practical music recommendation system using real-world data.
+
+
+
 Key features in the dataset include:
 
 Danceability – measures how suitable a track is for dancing based on rhythm and tempo.
