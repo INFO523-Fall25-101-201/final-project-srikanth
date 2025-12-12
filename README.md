@@ -19,7 +19,7 @@ In this project, we analyzed a Spotify music dataset (1921–2020) to build a ba
 
 
 
-Key features in the dataset include:
+# Key features in the dataset include:
 
 Danceability – measures how suitable a track is for dancing based on rhythm and tempo.
 
@@ -36,7 +36,7 @@ Release year – provides temporal context for musical trends.
 These attributes allow songs to be quantitatively compared and analyzed for similarity.
 
 
-Models Implemented:
+# Models Implemented:
 1️. Content-Based Recommender
 KNN + Cosine similarity
 Uses 9 audio features
