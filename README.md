@@ -3,7 +3,7 @@
 
 Final project repo for INFO 523 - Summer 2025.
 
-Site URL: https://github.com/INFO523-Fall25-101-201/final-project-srikanth
+Site URL: https://info523-fall25-101-201.github.io/final-project-srikanth/
 
 
 
