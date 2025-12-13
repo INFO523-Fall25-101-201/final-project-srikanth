@@ -22,6 +22,67 @@ execute:
 jupyter: python3
 ---
 
-## Abstract
 
-Add project abstract here.
+
+```{python}
+# Basic Data Science Libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Statistical Tests
+from scipy.stats import ttest_ind, pearsonr
+
+# Machine Learning Tools
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+
+# Load the Spotify dataset
+df = pd.read_csv("data/data.csv")
+
+df.drop(["id", "release_date", "liveness"], axis=1, inplace=True)
+df.drop_duplicates(inplace=True)
+
+# Select only numeric columns
+numeric_df = df.select_dtypes(include=['int64', 'float64'])
+
+# Compute correlation matrix
+corr_matrix = numeric_df.corr()
+
+# Plot heatmap
+plt.figure(figsize=(16,12))
+sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap="Greens", linewidths=0.5)
+plt.title("Correlation Heatmap of Spotify Audio Features (With Values)", fontsize=16)
+plt.xticks(rotation=45, ha="right")
+plt.yticks(rotation=0)
+plt.show()
+```
+
+## Introduction
+Music_Recom_System_Using_Spotify_Dataset.ipynb
+In this project, we analyzed a Spotify music dataset (1921–2020) to build a basic music recommendation system. We performed data cleaning and preprocessing, explored key audio features such as tempo, energy, danceability, and popularity, and used these features to understand patterns in music listening behavior. Based on the similarity of songs and their characteristics, we developed a recommendation approach that suggests songs similar to a given track. This project demonstrates how data analysis and feature-based similarity techniques can be applied to create a practical music recommendation system using real-world data.
+
+
+
+### Dataset
+
+The dataset used in this project is derived from Spotify’s music metadata and audio features. It includes thousands of tracks released over nearly a century, providing a rich historical and musical context. Each record represents a song and contains both descriptive and numerical attributes.
+
+**Key Variables:**
+
+
+Danceability – measures how suitable a track is for dancing based on rhythm and tempo.
+
+Energy – represents the intensity and activity level of a song.
+
+Tempo – indicates the speed of the track in beats per minute.
+
+Loudness – captures the overall sound level of a song.
+
+Popularity – reflects how frequently the song is played on Spotify.
+
+Release year – provides temporal context for musical trends.
+
+These attributes allow songs to be quantitatively compared and analyzed for similarity.
+

@@ -55,11 +55,6 @@ Produces improved musical similarity
 A complete, multi-method music recommendation system based on user listening history, audio similarity, and clustering — fulfilling the project objective.
 
 
-# Recommendation Techniques
-•	Collaborative Filtering: Using matrix factorization techniques such as SVD (Singular Value Decomposition) or K-Nearest Neighbors (KNN) predict user preferences when their profile is similar to other users.
-•	Content-Based Filtering: Recommend the similarities of the songs that the user has been listening to; based on the musical aspects (tempo, danceability, loudness etc.).
-•	Hybrid Model: Unite the best attributes of content-based and collaborative filtering with the aid of such algorithms as Matrix Factorization or Neural Network-based combinations.
-
 
 #### Disclosure:
 Derived from the original data viz course by Mine Çetinkaya-Rundel @ Duke University
