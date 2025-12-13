@@ -56,8 +56,8 @@ These attributes allow songs to be quantitatively compared and analyzed for simi
 # Data Loading & Initial Exploration
 
 Statistical Results:
-•	Dataset size: ~170,000 tracks
-•	Number of features: 20+ attributes
+    	Dataset size: ~170,000 tracks
+      Number of features: 20+ attributes
 o	Audio features: danceability, energy, acousticness, loudness, tempo, valence, etc.
 •	Popularity statistics:
 o	Mean popularity ≈ 32
@@ -118,7 +118,7 @@ Danceability vs Valence: Moderate positive correlation (r ≈ 0.40–0.55)
 
 Acousticness vs Energy: Strong negative correlation (r ≈ −0.60 to −0.70)
 
-📌 Conclusion (EDA):
+   Conclusion (EDA):
 The dataset shows clear statistical structure, validating its suitability for clustering and recommendation modeling.
 
 ```{python}
@@ -181,7 +181,7 @@ Calm / Relaxed	0.45–0.60	< 0.40
 Sad / Melancholic	< 0.35	< 0.45
 Energetic / Aggressive	< 0.50	> 0.75
 
-📌 Conclusion (Emotion Analysis):
+  Conclusion (Emotion Analysis):
 Statistically significant separation exists between emotional groups based on valence–energy space, enabling emotion-aware recommendations.
 
 
@@ -287,7 +287,7 @@ Cluster 2	Balanced danceability & valence
 Cluster 3	Aggressive, loud, fast tempo
 Cluster 4	Emotional, minor mode, mid-energy
 
-📌 Conclusion (Clustering):
+ Conclusion (Clustering):
 Clusters are statistically distinct, interpretable, and musically meaningful.
 
 
@@ -329,5 +329,5 @@ Genre-coherent
 
 Artist-relevant
 
-📌 Conclusion (Recommendations):
+ Conclusion (Recommendations):
 The system demonstrates statistical coherence, interpretability, and personalization, outperforming random or popularity-based recommendations.
